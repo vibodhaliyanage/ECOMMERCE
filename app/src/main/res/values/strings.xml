@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ECOMMERCE</string>
+    <string name="app_version">V 1.0.0</string>
+    <string name="side_nave_home_title">Home</string>
+    <string name="side_nav_profile_title">Profile</string>
+    <string name="side_nav_order_title">Orders</string>
+    <string name="side_nav_wishlist_title">Wishlst</string>
+    <string name="side_nav_cart_title">Cart</string>
+    <string name="side_nav_message_title">Message</string>
+    <string name="side_nav_settings_title">Settings</string>
+    <string name="side_nav_login_title">Login</string>
+    <string name="side_nav_logOut_title">Log Out</string>
 </resources>
