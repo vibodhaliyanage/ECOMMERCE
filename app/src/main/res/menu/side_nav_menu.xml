@@ -3,6 +3,7 @@
 
     <group>
         <item
+            android:icon="@drawable/baseline_home_24"
             android:title="@string/side_nave_home_title"/>
         <item
             android:title="@string/side_nav_profile_title"/>
