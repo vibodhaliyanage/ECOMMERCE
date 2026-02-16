@@ -41,39 +41,40 @@ public class SplashActivity extends AppCompatActivity {
                         WindowManager.LayoutParams.FLAG_FULLSCREEN
                 );
             }
-        }
-
-        setContentView(R.layout.activity_splash);
-        ImageView imageView = findViewById(R.id.splashLogo);
+            setContentView(R.layout.activity_splash);
+            ImageView imageView = findViewById(R.id.splashLogo);
 //        Picasso.get()
 //                .load(R.drawable.ic_launcher_foreground)
 //                .resize(300,300)
 //                .into(imageView);
 
-        Glide.with(this)
-                .asBitmap()
-                .load(R.drawable.ic_launcher_foreground)
-                .override(400)
-                .into(imageView);
+            Glide.with(this)
+                    .asBitmap()
+                    .load(R.drawable.ic_launcher_foreground)
+                    .override(400)
+                    .into(imageView);
 
-        new Handler(Looper.getMainLooper())
-                .postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
-                    }
-                }, 1000);
+            new Handler(Looper.getMainLooper())
+                    .postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
+                        }
+                    }, 1000);
 
-        new Handler(Looper.getMainLooper())
-                .postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        findViewById(R.id.progressBar).setVisibility(View.INVISIBLE);
-                        Intent intent = new Intent(SplashActivity.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                }, 5000);
+            new Handler(Looper.getMainLooper())
+                    .postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.progressBar).setVisibility(View.INVISIBLE);
+                            Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    }, 5000);
+        }
+
+
 
     }
 }

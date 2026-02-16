@@ -48,8 +48,4 @@
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
     </style>
 
-    <style name="Theme.AppTheme.FullScreen" parent="AppTheme">
-        <item name="android:windowFullscreen">true</item>
-
-    </style>
 </resources>
